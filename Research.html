@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="w3-light-grey">
+
+<div class="w3-content" style="max-width:1400px">
+
+
+
+<div class="w3-bar w3-black">
+    <div class="w3-bar w3-black w3-card">
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="Resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resume</a>
+      <a href="Research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Projects<i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="fpga.html" class="w3-bar-item w3-button">FPGA Simulation Project</a>
+          <a href="#" class="w3-bar-item w3-button">Farkle Game</a>
+          <a href="#" class="w3-bar-item w3-button">IR sensor</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+
+</div>
+
+<header class="w3-container w3-center w3-padding-32"> 
+    <h1><b>Artistic Robotic Paiting System Research</b></h1>
+    <p>Undergraduate Research with Dr. Egerstedt - Georgia Robotics and InTelligent Systems Laboratory (GRITS)</p>
+</header>
+
+
+<div>
+      
+  <div class="w3-container w3-card w3-white w3-margin-bottom">
+    <div class="w3-container">
+      <br>
+      <h5 class="w3-opacity"><b>Motivation</b></h5>
+      <p>
+        The intersection of art and robotics in innovative projects has become an active object of study in the research realm. Though two seemingly disparate disciplines, researchers and artists keep pushing the boundaries of the traditional 
+        conceptions of different forms of art1. María’s previous project investigated the problem of how to distribute a team of robots equipped with different paints over a canvas according to some human specification. The authors focused on 
+        the distributed control strategy which produced a digital canvas through subsequent projection of digital trails.  As fascinating as the project was, having a swarm of robots that uses watercolor paint and paint onto a concrete canvas 
+        is much more intriguing. Doing this enables artists to create new forms of art: providing a human swarm interaction modality to control a swarm of robots for the purpose of robot painting. 
+      </p>
+      <h5 class="w3-opacity"><b>Background</b></h5>
+      <p>Researchers have created robotic systems to perform painting with a brush, like this robotic painting system that has a color mixing device allowing the rendering of a required color2. María’s work on the robotics swarm mechanism is 
+        also based on a heterogeneous coverage1. That work studies how to distribute the robots on the canvas based on the user requirements and the paints available to each robot. When a user gives an order, the robots will decide where to 
+        go on the canvas. The individual robots adjust the color of their trail according to a coverage control strategy that corresponds to the commands specified by the human user.  Since the robots have information about the paints available 
+        of each neighboring robot, they can coordinate among themselves to complete the task. 
+      </p>
+      
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="cartv1.png" style="width:100%">
+          <div class="text">Cart Version One</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="cartv2.png" style="width:100%">
+          <div class="text">Cart Version Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="cartv3.png" style="width:100%">
+          <div class="text">Cart Version Three</div>
+        </div>
+      
+        <a class="prev" >&#10094;</a>
+        <a class="next">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>  
+      </div>
+      
+      
+      <br>
+      <h5 class="w3-opacity"><b>Objective</b></h5>
+      <p>The goal of this project is to build robots capable of laying real paint onto a canvas. We, therefore, strive to create a physical painting as opposed to a digital rendition. To accomplish this, a printed circuit board (PCB) is needed 
+        to control the enable/disable of the atomizer, the device that we chose which sprays watercolor paint onto the concrete canvas. The PCB will be mounted on the cart to the robot and start laying colored trailed onto the canvas testing 
+        the effects of spray paint. 
+      </p>
+      <h5 class="w3-opacity"><b>Materials and Methods</b></h5>
+      <p>The general idea for how robots will move around on the canvas is having the Brushbots3, vibration driven robots, carry our cart that sprays paint. We want to be able to attach and control a physical painting system onto the Brushbots. 
+        The Brushbots are small therefore having our cart design as compact and as light-weight as possible is important. We chose the atomizers as the spray paint material. An atomizer is a diffuser that sprays water and diffuses into the air. 
+        They are very simple, small, and light, which are very important characteristics for a small robot like the Brushbot. When installing it upside down, we can make it paint like an airbrush by mixing colored pigment into the water. We have 
+        chosen to use watercolor paint since they are water-soluble which is easy to clean for testing. 
+      </p>
+      <p>In order to produce a high range of colors on the canvas, the atomizers need to spray the pigments in different proportions. We have chosen to use four colors on our cart design: cyan, magenta, yellow, and black, as they are the four 
+        main colors on a printer and you can create any color combination from mixing those colors in the appropriate ratios. To control each atomizer and the rate of discharge, a dedicated circuit is needed. I designed a printing circuit board 
+        (PCB) on EAGLE and combined necessary components, including a boost converter, level shifters, 555 timers, etc, to make the designed PCB work. To control the specific movement of the robots, a program can be created. This program will 
+        allow users to control the density functions involved in painting. The user can choose the color and the location of where to paint an image created by different color densities. 
+      </p>
+      <h5 class="w3-opacity"><b>Past Work</b></h5>
+      <p>
+        I have been working on this starting from the Fall of 2020. In the Summer of 2021, I designed the PCB for the atomizers on EAGLE. Due to the limitation of compactness, I had limited amount of space on the board which was a challenge 
+        routing the circuit board. I successfully designed the board by reading through the components needed on the datasheets. In the Spring of 2021, I ordered components needed for the PCB, soldered and debugged the board using the multimeter 
+        and a power supply. 
+      </p>
+     
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="toppcb.png" style="width:100%">
+          <div class="text">Top View of PCB</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="bottompcb.png" style="width:100%">
+          <div class="text">Bottom View of PCB</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pcbv1.png" style="width:100%">
+          <div class="text">PCB Version One</div>
+        </div>
+      
+        <a class="prev" >&#10094;</a>
+        <a class="next">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>  
+      </div>
+      <p>Furthermore, I conducted tests on the atomizers. I first tested one single color with independent variables of concentration of paint, speed, and distance from the atomizer to paper, as well as mixing two different colors to create 
+        colors other than the primary colors. 
+      </p>
+      <hr>
+    </div>
+  </div>
+  <!-- End Left Column -->
+  </div>
+</div>
+
+<script>
+(function() {
+
+init(); //on page load - show first slide, hidethe rest
+
+function init() {
+
+  parents = document.getElementsByClassName('slideshow-container');
+
+  for (j = 0; j < parents.length; j++) {
+    var slides = parents[j].getElementsByClassName("mySlides");
+    var dots = parents[j].getElementsByClassName("dot");
+    slides[0].classList.add('active-slide');
+    dots[0].classList.add('active');
+  }
+}
+
+dots = document.getElementsByClassName('dot'); //dots functionality
+
+for (i = 0; i < dots.length; i++) {
+
+  dots[i].onclick = function() {
+
+    slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+
+    for (j = 0; j < this.parentNode.children.length; j++) {
+      this.parentNode.children[j].classList.remove('active');
+      slides[j].classList.remove('active-slide');
+      if (this.parentNode.children[j] == this) {
+        index = j;
+      }
+    }
+    this.classList.add('active');
+    slides[index].classList.add('active-slide');
+
+  }
+}
+//prev/next functionality
+links = document.querySelectorAll('.slideshow-container a');
+
+for (i = 0; i < links.length; i++) {
+  links[i].onclick = function() {
+    current = this.parentNode;
+
+    var slides = current.getElementsByClassName("mySlides");
+    var dots = current.getElementsByClassName("dot");
+    curr_slide = current.getElementsByClassName('active-slide')[0];
+    curr_dot = current.getElementsByClassName('active')[0];
+    curr_slide.classList.remove('active-slide');
+    curr_dot.classList.remove('active');
+    if (this.className == 'next') {
+
+      if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+        curr_slide.nextElementSibling.classList.add('active-slide');
+        curr_dot.nextElementSibling.classList.add('active');
+      } else {
+        slides[0].classList.add('active-slide');
+        dots[0].classList.add('active');
+      }
+
+    }
+
+    if (this.className == 'prev') {
+
+      if (curr_slide.previousElementSibling) {
+        curr_slide.previousElementSibling.classList.add('active-slide');
+        curr_dot.previousElementSibling.classList.add('active');
+      } else {
+        slides[slides.length - 1].classList.add('active-slide');
+        dots[slides.length - 1].classList.add('active');
+      }
+
+    }
+
+  }
+
+}
+})()
+  
+</script>
+</body>
+</html>
