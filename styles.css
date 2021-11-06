@@ -9,6 +9,7 @@
     max-width: 500px;
     position: relative;
     margin: auto;
+    
   }
   
   /* Next & previous buttons */
@@ -17,9 +18,9 @@
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 5px;
-    color: rgb(74, 107, 73);
+    margin-top: -50px;
+    padding: 10px;
+    color: rgb(228, 157, 77);
     font-weight: bold;
     font-size: 15px;
     transition: 0.6s ease;
