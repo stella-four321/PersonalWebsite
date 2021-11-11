@@ -12,9 +12,11 @@
 
 </head>
 
-<body class="w3-light-grey">
-
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div style = "background-image: url('pattern.jpg'); background-size: 100%;">
 <div class="w3-content" style="max-width:1400px">
+
 
 <div class="w3-bar ">
     <div class="w3-bar w3-food-saffron">
@@ -26,7 +28,7 @@
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="fpga.html" class="w3-bar-item w3-button">FPGA Simulation Project</a>
           <a href="#" class="w3-bar-item w3-button">Farkle Game</a>
-          <a href="#" class="w3-bar-item w3-button">LED Light</a>
+          <a href="ledlight.html" class="w3-bar-item w3-button">LED Light</a>
         </div>
       </div>
       <a href="music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style = "color:rgb(128, 53, 18)">My Music</a>
@@ -39,58 +41,89 @@
       <p style="font-size:17px">Welcome to my personal website</p>
   </header>
 
-
+  <div class="w3-content" style="max-width:1300px">
 
   <!-- End Left Column -->
   
-  <div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-row-padding w3-padding-64 w3-container" style = "background-color: rgb(255, 239, 209);">
     <div class="w3-content">
       <div class="w3-twothird">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-  
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h1>Introduction</h1>
+        <h5 class="w3-padding-64">Hi, I'm Stella. I am currently a 3<sub>rd</sub> year majoring in electrical engineering at Georgia Institute of Technology. I fell in love 
+          with engineering when I realized that it is a very creative and interdisciplinary subject field. For example, I am currently in a research making artistic robotic painting system. Since I am an artistic and creative person, 
+          I love how I can combine the more artistic subject to a more concrete field, like engineering and robotics. 
+        </h5>
       </div>
   
       <div class="w3-third w3-center">
-        <i class="w3-padding-64 w3-text-red"><img src="me.jpg" style="width:65%" alt="Avatar" class="center"></i>
+        <i class="w3-padding-64 w3-text-red"><img src="me.jpg" style="width:75%" alt="Avatar" class="center"></i>
       </div>
     </div>
   </div>
+  <br>
   <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-row-padding w3-padding-64 w3-container" style = "background-color: rgb(250, 239, 230);">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="w3-padding-64 w3-text-red w3-margin-right">  <img src="me.jpg" style="width:65%" alt="Avatar" class="center"></i>
+    <h1>Exploration</h1>
+    <br>
+    <div class="w3-third">
+      <i class="w3-padding-64 w3-margin-left">  <img src="explore.jpg" style="width:85%" alt="Avatar"></i>
     </div>
 
     <div class="w3-twothird">
-      <h1>Research</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      
+      <h5>One thing that I am constantly doing everyday is to explore. I am a curious person and I am willing to learn any new skills provided to me. For example, I self-learned HTML and Java to build this personal website. Furthermore,
+        I am a Peer Instructor at an interdisciplinary makerspace on campus in which I help students fascilitate their personal projects. To become a Peer Instructor, I get to learn how to operate all the equipment in the makerspace, including
+        PCB manufacturing, 3D printing, laser cutting, wood working, embedded systems, and electronics benchtop.
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </h5>
     </div>
   </div>
 </div>
+</div>
+<br>
 
 <footer>
-<div class="w3-container w3-food-saffron w3-center w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Find me on Social Media</h1>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-</div>
-</footer>
+  <div id = "footer" class="w3-container w3-food-saffron w3-center w3-padding-64">
+      <h1 class="w3-margin w3-xlarge" style = "color: rgb(78, 47, 18);">Find me on Social Media</h1>
+      <a href = "https://www.instagram.com/stella_four321/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href = "https://www.linkedin.com/in/stella-fournier-43aa36104/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href = "https://www.youtube.com/channel/UCuxbjWSTIRigigt_Hiff-fg" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+  </footer>
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(){
+   $('h1').mousemove(function(e){
+     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+     $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgb(239, 159, 101), '+rYP/8+'px '+rXP/60+'px rgb(247, 240, 43), '+rXP/70+'px '+rYP/12+'px rgb(245, 112, 55)');
+   });
+});
+</script>
 
 
-</div>
 </body>
 
 

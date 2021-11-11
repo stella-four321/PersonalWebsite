@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Music</title>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 
 </head>
 
 <body class="w3-light-grey">
+<div style = "background-image: url('coucoubackground.jpg'); background-size: 100%;">
+<div class="w3-content" style="max-width:1400px;">
+  
 
-<div class="w3-content" style="max-width:1400px">
 
 <div class="w3-bar ">
     <div class="w3-bar w3-food-saffron">
@@ -26,14 +29,20 @@
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="fpga.html" class="w3-bar-item w3-button">FPGA Simulation Project</a>
           <a href="#" class="w3-bar-item w3-button">Farkle Game</a>
-          <a href="#" class="w3-bar-item w3-button">LED Light</a>
+          <a href="ledlight.html" class="w3-bar-item w3-button">LED Light</a>
         </div>
       </div>
       <a href="music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style = "color:rgb(128, 53, 18)">My Music</a>
     </div>
 
 </div>
-<!-- End Left Column -->
+<!-- End Navigation Bar -->
+
+<br>
+
+<div class="w3-content" style="max-width:1300px;">
+  <div class="w3-container w3-card w3-white w3-margin-bottom">
+    <div class="w3-container">
 
 <!-- First Song -->
 <div class="w3-row-padding w3-padding-64">
@@ -41,93 +50,190 @@
       
         <h1>Coucou</h1> 
         <p class="date">May, 2020</p>
-        <h5 class="w3-padding-32"><i>Coucou</i> is an original song I wrote in the Summer 2020. This song is about missing my partner during the quarantine in which long distance is inevitable.
-        "Coucou", which means "hi" in French, is constantly repeated throughout the song due to a long to have a simple small talk or a text saying "hi" from my partner. This song consists of me having a conversation with myself, suffering from confinement and loneliness, longing and missing of my partner.
-            that I miss saying hi my partner <h5>
-        <h5>My sister, Celing Fournier, made the animation for my music video. The somehow slow motions of symbolic shapes shows how slowly time flows during confinement and being alone for a long
-            period of time.
+        <h5 class="w3-padding-32">
+          <i>Coucou</i> is an original song I wrote in the Summer 2020. This song is about missing my partner during the quarantine in which long distance is inevitable.
+          "Coucou", which means "hi" in French, is constantly repeated throughout the song due to a long to have a simple small talk or a text saying "hi" from my partner. This song consists of me having a conversation with myself, suffering from confinement and loneliness, longing and missing of my partner.
+          that I miss saying hi my partner 
+        <h5>
+        <h5>
+          My sister, Celing Fournier, made the animation for my music video. The somehow slow motions of symbolic shapes shows how slowly time flows during confinement and being alone for a long
+          period of time.
         </h5>
   <br><br>
 
-      <div class="w3-center">
-          <br>
-        <i class="w3-padding-64 w3-text-red"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZaZhz8MEf4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></i>
-      </div>
+    <div class="w3-center">
+      <br>
+      <i class="w3-padding-64 w3-text-red"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZaZhz8MEf4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></i>
     </div>
-</div>
- 
-<!-- Second Song -->
-<div class="w3-row-padding w3-padding-64">
-    <div class="w3-content">
-        <h1>Christmas Loneliness</h1>
-        <p class="date">November, 2020</p>
-        <h5 class="w3-padding-32">I wrote <i>Christmas Loneliness</i> when Christmas holiday was around the corner. When Christmas slowly approached, I realized that I've never celebrated Christmas with a partner. 
-            It was also the time that I lost a special person in my life. I tried to juxtapose the jolyness of Christmas and the vibrantness of street lights with the loneliness I was feeling during that time. I wished I was heard 
-            and cared for when I said I reached the shooting star.<h5>
-        
-  <br><br>
+<br><br>
 
-      <div class="w3-center">
-          <br>
-        <i class="w3-padding-64 w3-text-red"><iframe width="560" height="315" src="https://www.youtube.com/embed/Peuisxb7diQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></i>
-    <div class="w3-padding-64">
-        <h3>Lyrics</h3>  
-        <p>It’s that time of the year again <br>
-            Naked trees and candy canes <br>
-            Wondering who’s gonna hold my hand</p>
-        <p>Wind keeps rushing into my eyes<br>
-            Tears can’t stop storming down my cheek<br>
-            After you left me</p>
-        <p>Christmas lights are on<br>
-            I should be jolly<br>
-            Instead, I dim my heart </p>
-        <p>My plane is leaving next week<br>
-            Will you come say goodbye?<br>
-            How do I lure you in my heart?</p>
+  <div class="w3-center">
+    <button class = "button" onclick= "document.getElementById('id01').style.display='block'"><span>Coucou Lyrics</span></button>
+  </div>
+
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container" style = "color: rgb(175, 129, 76); background-image:url('coucoubackground.jpg'); background-size: 100%;"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 style="text-align:center;">Coucou</h2>
+      </header>
+      <div class="w3-container" style="text-align:center; line-height: 2;">
+        <p>I say coucou, coucou<br>
+          How are you, on this fine day? <br>
+          I’m fine, thank you</p>
+        <p>Coucou, coucou <br>
+          It started raining, did it change your mood? <br>
+          I wiped my feet and frowned </p>
+        <p>My mind is empty<br>
+          Are you there?<br>
+          Talk to me <br>
+          I'm bored
+        </p>
+        <p>Never heard a coucou, coucou <br>
+          From someone for months now <br>
+          No one seems to care, au secours <br>
+          Cou, coucou <br>
+          A day seems like forever and ever, forever  </p>
         <p>Come on I’m just a stupid city girl <br>
             I’m also kinda weird yo<br>
             I know how you feel</p>
-        <p>I’m tryna reach that shooting star<br>
-            Now I’m on it<br>
-            Did you see me?<br>
-            Did you make your wish on me?</p>
-        <p>Christmas lights are on<br>
-            I should be jolly<br>
-            Instead, I dim my heart </p>
-        <p>My plane is leaving next week<br>
-            Will you come say goodbye?<br>
-            How do I lure you in my heart?</p>
-        <p>I’ll wrap you up <br>
-            With a bow on your head <br>
-            Though it’s not for me <br>
-            I’m hopeful for next...</p>
-        <p>Christmas lights are on<br>
-            I should be jolly<br>
-            Instead, I dim my heart </p>
-        <p>My plane is leaving tomorrow<br>
-            Will you come say goodbye?<br>
-            How do I lure you in my heart?</p>
-    </div>
+        <p>Cuz there is nothing to do<br>
+          I don’t know what to do?<br>
+        </p>
+        <p>I’ll be singing coucou, coucou <br>
+          Where are you? I miss you <br>
+          The rooster is singing<br>
+          Coucou, coucou how are you?</p>
+        <p>I'm fine, thank you...</p>
         
-    </div>
+      </div>
       
+    </div><br><br>
+  </div>
+  </div>
+</div>
+
+ 
+<!-- Second Song -->
+<div class="w3-row-padding w3-padding-64">
+  <div class="w3-content">
+    <h1>Christmas Loneliness</h1>
+    <p class="date">November, 2020</p>
+    <h5 class="w3-padding-32">
+      I wrote <i>Christmas Loneliness</i> when Christmas holiday was around the corner. When Christmas slowly approached, I realized that I've never celebrated Christmas with a partner. 
+      It was also the time that I lost a special person in my life. I tried to juxtapose the jolyness of Christmas and the vibrantness of street lights with the loneliness I was feeling during that time. I wished I was heard 
+      and cared for when I said I reached the shooting star.
+    <h5><br><br>
+    <div class="w3-center"><br>
+      <i class="w3-padding-64 w3-text-red"><iframe width="560" height="315" src="https://www.youtube.com/embed/Peuisxb7diQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></i>
     </div>
+    <br><br>
+    
+    <div class="w3-center"><button class = "button" onclick= "document.getElementById('id02').style.display='block'"><span>Christmas Loneliness Lyrics</span></button></div>
+      <div id="id02" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content w3-card-4">
+          <header class="w3-container" style = "background-image:url('coucoubackground.jpg'); background-size: 100%;"> 
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+            <h2 style="text-align:center; color: rgb(175, 129, 76);">Christmas Loneliness</h2>
+          </header>
+            <div class="w3-container" style="text-align:center;line-height: 2;">
+              <p>It’s that time of the year again <br>
+                  Naked trees and candy canes <br>
+                  Wondering who’s gonna hold my hand
+              </p>
+              <p>Wind keeps rushing into my eyes<br>
+                  Tears can’t stop storming down my cheek<br>
+                  After you left me
+              </p>
+              <p>Christmas lights are on<br>
+                  I should be jolly<br>
+                  Instead, I dim my heart 
+              </p>
+              <p>My plane is leaving next week<br>
+                  Will you come say goodbye?<br>
+                  How do I lure you in my heart?
+              </p>
+              <p>Come on I’m just a stupid city girl <br>
+                  I’m also kinda weird yo<br>
+                  I know how you feel
+              </p>
+              <p>I’m tryna reach that shooting star<br>
+                  Now I’m on it<br>
+                  Did you see me?<br>
+                  Did you make your wish on me?
+              </p>
+              <p>Christmas lights are on<br>
+                  I should be jolly<br>
+                  Instead, I dim my heart 
+              </p>
+              <p>My plane is leaving next week<br>
+                  Will you come say goodbye?<br>
+                  How do I lure you in my heart?
+              </p>
+              <p>I’ll wrap you up <br>
+                  With a bow on your head <br>
+                  Though it’s not for me <br>
+                  I’m hopeful for next...
+              </p>
+              <p>Christmas lights are on<br>
+                  I should be jolly<br>
+                  Instead, I dim my heart 
+              </p>
+              <p>My plane is leaving tomorrow<br>
+                  Will you come say goodbye?<br>
+                  How do I lure you in my heart?
+              </p>
+                
+            </div>
+              
+        </div><br><br>
+        
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
 </div>
 
 <footer>
-<div class="w3-container w3-food-saffron w3-center w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Find me on Social Media</h1>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-</div>
+  <div id = "footer" class="w3-container w3-food-saffron w3-center w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">Find me on Social Media</h1>
+      <a href = "https://www.instagram.com/stella_four321/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href = "https://www.linkedin.com/in/stella-fournier-43aa36104/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href = "https://www.youtube.com/channel/UCuxbjWSTIRigigt_Hiff-fg" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
 </footer>
 
 
-</div>
+
+
+<script>
+  let box = document.getElementById('box'),
+    btn = document.querySelector('button');
+
+btn.addEventListener('click', function () {
+  
+  if (box.classList.contains('hidden')) {
+    box.classList.remove('hidden');
+    setTimeout(function () {
+      box.classList.remove('visuallyhidden');
+    }, 20);
+  } else {
+    box.classList.add('visuallyhidden');    
+    box.addEventListener('transitionend', function(e) {
+      box.classList.add('hidden');
+    }, {
+      capture: false,
+      once: true,
+      passive: false
+    });
+  }
+  
+}, false);
+</script>
+
 </body>
 
 

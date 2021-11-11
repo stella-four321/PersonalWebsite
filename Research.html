@@ -6,12 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="w3-light-grey">
-
+<body>
+<div style = "background-image: url('pattern.jpg'); background-size: 100%;">
 <div class="w3-content" style="max-width:1400px">
 
 
@@ -26,15 +26,16 @@
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="fpga.html" class="w3-bar-item w3-button">FPGA Simulation Project</a>
           <a href="#" class="w3-bar-item w3-button">Farkle Game</a>
-          <a href="#" class="w3-bar-item w3-button">LED Light</a>
+          <a href="ledlight.html" class="w3-bar-item w3-button">LED Light</a>
         </div>
       </div>
       <a href="music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style = "color:rgb(128, 53, 18)">My Music</a>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
     </div>
 
 </div>
 
+<div class="w3-content" style="max-width:1300px">
 <header class="w3-container w3-center w3-padding-32"> 
     <h1><b>Artistic Robotic Paiting System Research</b></h1>
     <p>Undergraduate Research with Dr. Egerstedt - Georgia Robotics and InTelligent Systems Laboratory (GRITS)</p>
@@ -47,17 +48,39 @@
     <div class="w3-container">
       <br>
       <h5 class="w3-opacity"><b>Motivation</b></h5>
-      <p>
+      <p style = "line-height: 2;">
         The intersection of art and robotics in innovative projects has become an active object of study in the research realm. Though two seemingly disparate disciplines, researchers and artists keep pushing the boundaries of the traditional 
-        conceptions of different forms of art1. María’s previous project investigated the problem of how to distribute a team of robots equipped with different paints over a canvas according to some human specification. The authors focused on 
+        conceptions of different forms of art. María’s previous project investigated the problem of how to distribute a team of robots equipped with different paints over a canvas according to some human specification. The authors focused on 
         the distributed control strategy which produced a digital canvas through subsequent projection of digital trails.  As fascinating as the project was, having a swarm of robots that uses watercolor paint and paint onto a concrete canvas 
         is much more intriguing. Doing this enables artists to create new forms of art: providing a human swarm interaction modality to control a swarm of robots for the purpose of robot painting. 
       </p>
-      <h5 class="w3-opacity"><b>Background</b></h5>
-      <p>Researchers have created robotic systems to perform painting with a brush, like this robotic painting system that has a color mixing device allowing the rendering of a required color<sub>2</sub>. María’s work on the robotics swarm mechanism is 
-        also based on a heterogeneous coverage1. That work studies how to distribute the robots on the canvas based on the user requirements and the paints available to each robot. When a user gives an order, the robots will decide where to 
+      <br><br>
+      <h5 class="w3-opacity"><b>Background</b></h5><img src = "density.jpg" ALIGN="right" width="33%" style = "padding-left: 40px;">
+      <p style = "line-height: 2;">Researchers have created robotic systems to perform painting with a brush, like this robotic painting system that has a color mixing device allowing the rendering of a required color. María’s work on the robotics swarm mechanism is 
+        also based on a heterogeneous coverage. That work studies how to distribute the robots on the canvas based on the user requirements and the paints available to each robot. When a user gives an order, the robots will decide where to 
         go on the canvas. The individual robots adjust the color of their trail according to a coverage control strategy that corresponds to the commands specified by the human user.  Since the robots have information about the paints available 
         of each neighboring robot, they can coordinate among themselves to complete the task. 
+      </p>
+      
+      <br>
+      
+      
+      <h5 class="w3-opacity"><b>Objective</b></h5>
+      <p style = "line-height: 2;">The goal of this project is to build robots capable of laying real paint onto a canvas. We, therefore, strive to create a physical painting system as opposed to a digital rendition. To accomplish this, a printed circuit board (PCB) is needed 
+        to control the enable/disable of the atomizer, the device that we chose which sprays watercolor paint onto the concrete canvas. The PCB will be mounted on the cart to the robot and start laying colored trails onto the canvas testing 
+        the effects of spray paint. 
+      </p>
+      <br><br>
+      <h5 class="w3-opacity"><b>Materials and Methods</b></h5>
+      <p style = "line-height: 2;">The general idea for how robots will move around on the canvas is having the Brushbots3, vibration driven robots, carry our cart that sprays paint. We want to be able to attach and control a physical painting system onto the Brushbots. 
+        The Brushbots are small therefore having our cart design as compact and as light-weight as possible is important. We chose the atomizers as the spray paint material. An atomizer is a diffuser that sprays water and diffuses into the air. 
+        They are very simple, small, and light, which are very important characteristics for a small robot like the Brushbot. When installing it upside down, we can make it paint like an airbrush by mixing colored pigment into the water. We have 
+        chosen to use watercolor paint since they are water-soluble which is easy to clean for testing. 
+      </p>
+      <p style = "line-height: 2;">In order to produce a high range of colors on the canvas, the atomizers need to spray the pigments in different proportions. We have chosen to use four colors on our cart design: cyan, magenta, yellow, and black, as they are the four 
+        main colors on a printer and you can create any color combination from mixing those colors in the appropriate ratios. To control each atomizer and the rate of discharge, a dedicated circuit is needed. I designed a printing circuit board 
+        (PCB) on EAGLE and combined necessary components, including a boost converter, level shifters, 555 timers, etc, to make the designed PCB work. To control the specific movement of the robots, a program can be created. This program will 
+        allow users to control the density functions involved in painting. The user can choose the color and the location of where to paint an image created by different color densities. 
       </p>
       <br>
       <div class="slideshow-container">
@@ -87,27 +110,9 @@
         <span class="dot"></span>
       </div>  
       </div>
-      
-      
       <br>
-      <h5 class="w3-opacity"><b>Objective</b></h5>
-      <p>The goal of this project is to build robots capable of laying real paint onto a canvas. We, therefore, strive to create a physical painting as opposed to a digital rendition. To accomplish this, a printed circuit board (PCB) is needed 
-        to control the enable/disable of the atomizer, the device that we chose which sprays watercolor paint onto the concrete canvas. The PCB will be mounted on the cart to the robot and start laying colored trailed onto the canvas testing 
-        the effects of spray paint. 
-      </p>
-      <h5 class="w3-opacity"><b>Materials and Methods</b></h5>
-      <p>The general idea for how robots will move around on the canvas is having the Brushbots3, vibration driven robots, carry our cart that sprays paint. We want to be able to attach and control a physical painting system onto the Brushbots. 
-        The Brushbots are small therefore having our cart design as compact and as light-weight as possible is important. We chose the atomizers as the spray paint material. An atomizer is a diffuser that sprays water and diffuses into the air. 
-        They are very simple, small, and light, which are very important characteristics for a small robot like the Brushbot. When installing it upside down, we can make it paint like an airbrush by mixing colored pigment into the water. We have 
-        chosen to use watercolor paint since they are water-soluble which is easy to clean for testing. 
-      </p>
-      <p>In order to produce a high range of colors on the canvas, the atomizers need to spray the pigments in different proportions. We have chosen to use four colors on our cart design: cyan, magenta, yellow, and black, as they are the four 
-        main colors on a printer and you can create any color combination from mixing those colors in the appropriate ratios. To control each atomizer and the rate of discharge, a dedicated circuit is needed. I designed a printing circuit board 
-        (PCB) on EAGLE and combined necessary components, including a boost converter, level shifters, 555 timers, etc, to make the designed PCB work. To control the specific movement of the robots, a program can be created. This program will 
-        allow users to control the density functions involved in painting. The user can choose the color and the location of where to paint an image created by different color densities. 
-      </p>
       <h5 class="w3-opacity"><b>Past Work</b></h5>
-      <p>
+      <p style = "line-height: 2;">
         I have been working on this starting from the Fall of 2020. In the Summer of 2021, I designed the PCB for the atomizers on EAGLE. Due to the limitation of compactness, I had limited amount of space on the board which was a challenge 
         routing the circuit board. I successfully designed the board by reading through the components needed on the datasheets. In the Spring of 2021, I ordered components needed for the PCB, soldered and debugged the board using the multimeter 
         and a power supply. 
@@ -116,22 +121,36 @@
 
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext">1 / 5</div>
+          <img class = "center" src="frontbrd.jpg" style="width:80%">
+          <div class="text">Soldered Front PCB</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img class = "center" src="backbrd.jpg" style="width:80%">
+          <div class="text">Soldered Back PCB</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
           <img class="center" src="toppcb.png" style="width:80%">
           <div class="text">Top View of PCB</div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+          <div class="numbertext">4 / 5</div>
           <img class = "center" src="bottompcb.png" style="width:80%">
           <div class="text">Bottom View of PCB</div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+          <div class="numbertext">5 / 5</div>
           <img class = "center" src="pcbv1.png" style="width:80%">
           <div class="text">PCB Version One</div>
         </div>
+
+        
       
         <a class="prev" >&#10094;</a>
         <a class="next">&#10095;</a>
@@ -139,9 +158,11 @@
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>  
       </div>
-      <p>Furthermore, I conducted tests on the atomizers. I first tested one single color with independent variables of concentration of paint, speed, and distance from the atomizer to paper, as well as mixing two different colors to create 
+      <p style = "line-height: 2;">Furthermore, I conducted tests on the atomizers. I first tested one single color with independent variables of concentration of paint, speed, and distance from the atomizer to paper, as well as mixing two different colors to create 
         colors other than the primary colors. 
       </p>
       <hr>
@@ -166,6 +187,15 @@
 </div>
 </div>
 </div>
+</div>
+<footer>
+  <div id = "footer" class="w3-container w3-food-saffron w3-center w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">Find me on Social Media</h1>
+      <a href = "https://www.instagram.com/stella_four321/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href = "https://www.linkedin.com/in/stella-fournier-43aa36104/" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href = "https://www.youtube.com/channel/UCuxbjWSTIRigigt_Hiff-fg" target="_blank" style = "font-size:30px; padding: 20px"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+  </footer>
 </div>
 
 <script>
