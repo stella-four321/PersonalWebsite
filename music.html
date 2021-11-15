@@ -14,6 +14,8 @@
 </head>
 
 <body class="w3-light-grey">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 <div style = "background-image: url('coucoubackground.jpg'); background-size: 100%;">
 <div class="w3-content" style="max-width:1400px;">
   
@@ -233,9 +235,26 @@ btn.addEventListener('click', function () {
   
 }, false);
 </script>
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
 
 </body>
-
-
-
 </html>
