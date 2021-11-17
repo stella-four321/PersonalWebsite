@@ -46,26 +46,29 @@
   <div class="w3-container w3-card w3-white w3-margin-bottom">
     
     <div class="w3-container">
-      <h5 class="w3-opacity" style = "padding-top: 20px;"><b>Motivation</b></h5><img src = "led1.jpg" ALIGN="right" width="23%" style = "padding-left: 40px; padding-top: 10px;">
-      <p style = "line-height: 2;">I built this LED light as a gift for my boyfriend's birthday. I saw this at The Hive, an electronics makerspace on campus,
+      <h5 class="w3-opacity fade-in" style = "padding-top: 20px;"><b>Motivation</b></h5>
+      
+      <img class = "slide-in from-right" src = "led1.jpg" ALIGN="right" width="23%" style = "padding-left: 40px;">
+      
+      <p class = "fade-in" style = "line-height: 2.5;">I built this LED light as a gift for my boyfriend's birthday. I saw this at The Hive, an electronics makerspace on campus,
         when they were offering a workshop for freshmans to build an LED light. I thought it was a great simple project for me to build as well as
         a creative hand-made gift for my boyfriend. 
       </p>
       <br>
       
-      <h5 class="w3-opacity"><b>Design Process</b></h5>
-      <p style = "line-height: 2;">To build the LED light system, I used a stripboard and solder the green LEDs, resistors, and power jack.
+      <h5 class = "fade-in"><b>Design Process</b></h5>
+      <p class = "fade-in" style = "line-height: 2.5;">To build the LED light system, I used a stripboard and solder the green LEDs, resistors, and power jack.
         I burned multiple LEDs while building the circuit for the light system. Another challenge I had was fitting all the components on the stripboard and then fitting
         the stripboard in the 3D printed holder box that holds the acrylic board. The 3D printed holder box didn't have a lot of space so all the components
         needed to be placed on the stripboard using the slightest space of the stripboard. 
     </p>
     <br>
-    <img src = "led2.jpg" ALIGN="left" width="23%" style = "padding-right: 40px; padding-bottom: 20px;">
-    <p style = "line-height: 2;">After successfully building the circuit, I created the acrylic design board on Adobe Illustrator. 
+    <img class = "slide-in from-left" src = "led2.jpg" ALIGN="left" width="23%" style = "padding-right: 40px; padding-bottom: 20px;">
+    <p class = "fade-in" style = "line-height: 2.5;">After successfully building the circuit, I created the acrylic design board on Adobe Illustrator. 
         I designed two different designs, one of them is us when we went fishing and another one is his headshot with a bird on his head (our inside joke). 
     Using the .ai files, I can use the laser cutting machine to cut and engrave the design I created.</p>
     <br>
-    <p style = "line-height: 2;">Now that I have all the pieces for this LED night light<span>&#8212;</span>the circuit board for the light system, the acrylic boards, the power supply, the 3D printed holder board<span>&#8212;</span>I can assemble them all 
+    <p class = "fade-in" style = "line-height: 2.5;">Now that I have all the pieces for this LED night light<span>&#8212;</span>the circuit board for the light system, the acrylic boards, the power supply, the 3D printed holder board<span>&#8212;</span>I can assemble them all 
         together and wrap it up in a box to give it to my boyfriend!</p>
       
       
@@ -86,25 +89,8 @@
   </footer>
 </div>
 
-<script>
-  var mybutton = document.getElementById("myBtn");
+<script src="topbutton.js"></script>
+<script src="fading.js"></script>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-</script>
 </body>
 </html>

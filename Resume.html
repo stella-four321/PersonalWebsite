@@ -51,11 +51,14 @@
       
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
-            <img src="me.jpg" style="width:100%" alt="Avatar">
+            <div class = "profile">
+              <img src="me.jpg" alt="Profile">
+            </div>
+            
             <div class="w3-display-bottomright w3-container w3-text-black">
               
             </div>
-            <div class="w3-container">
+            <div class="w3-container fade-in">
               <h1><b><i class="fa-fw w3-large"></i>Stella Fournier</b></h1>
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large"></i>Electrical Engineer</p>
               <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>stefour321@gatech.edu</p>
@@ -74,7 +77,10 @@
       
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Education</h2>
-          <div class="w3-container"><a class = "w3-hover-opacity" href="https://www.gatech.edu/" target="_blank"><img src="gt_logo.png" alt="gt logo" style="float:right;width:35%; padding-top:35px;"></a>
+          <div class="w3-container">
+            <a class = "gtlogo" href="https://www.gatech.edu/" target="_blank">
+              <img src="gt_logo.png" alt="gt logo">
+            </a>
             <h5 class="w3-opacity"><b>Georgia Institute of Technology</b></h5>
             <h6 class="w3-text-black"><i class="fa-fw w3-margin-right"></i>August 2019 - May 2023 <span class="w3-tag w3-food-egg w3-round"> Expected 2023</span></h6>
             <h6 class="w3-text-black"><i class="fa-fw w3-margin-right"></i>Bachelor of Science, Department of Electrical Engineering</h6>
@@ -136,7 +142,9 @@
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Experience</h2>
           
           <div class="w3-container">
-            <a href="https://www.gtspaceprogram.com/" target="_blank" class="w3-hover-opacity"><img src="yjsp.png" alt="gt logo" style="float:right;width:17%;padding-right:20px;"></a>
+            <a href="https://www.gtspaceprogram.com/" target="yjsp_logo" class="yjsp">
+              <img src="yjsp.png" alt="gt logo">
+            </a>
 
             <h5 class="w3-opacity"><b>Yellow Jackets Space Program (YJSP) - Avionics Team Member</b></h5>
             <h6 style = "color:rgb(231, 165, 78)"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2021 - Present</h6>
@@ -144,7 +152,9 @@
               <li>Designed a PCB on Altium with sensors including IMUs, GPS, accelerometer, barometric pressure sensor, and magnetometer to provide the rocket's state information.</li>
             </ul>
             <hr>
-            <a><a href="https://robojackets.org/teams/robocup/" target="_blank" class="w3-hover-opacity"><img src="robojackets.png" alt="gt logo" style="float:right;width:14%"></a>
+            <a><a href="https://robojackets.org/teams/robocup/" target="_blank" class="buzz">
+              <img src="robojackets.png" alt="gt logo">
+            </a>
             <h5 class="w3-opacity"><b>Robojackets RoboCup - Electrical Sub-Team Member</b></h5>
             <h6 lass="w3-opacity"><i>Autonomously-controlled and wirelessly-communicated robots that compete in the small size league (SSL).</i></h6>
 
@@ -205,25 +215,9 @@
 </footer>
 
 </div>
-<script>
-  var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+<script src="topbutton.js"></script>
+<script src="fading.js"></script>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-</script>
 </body>
 </html>

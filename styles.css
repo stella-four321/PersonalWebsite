@@ -191,3 +191,53 @@ p.date {
   transform: translateX(0);
   opacity: 1;
 }
+
+.profile > img {
+  width: 100%;
+  height:100%;
+  margin:auto;
+  display:block;
+  transition:all 0.3s ease;
+}
+
+.profile:hover > img {
+  transform: scale(0.95);
+}
+
+.gtlogo > img{
+  float:right;
+  width:35%; 
+  padding-top:35px;
+  transition: all 0.3s ease;
+}
+.gtlogo:hover > img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.yjsp > img {
+  float:right;
+  width:17%;
+  padding-right:20px;
+  transition: all 0.3s ease;
+}
+
+.yjsp:hover > img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.buzz > img {
+  float:right;
+  width:14%;
+  transition: all 0.3s ease;
+}
+.buzz:hover > img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.imgBox {
+  width: 200px;
+  height: 260px;
+  align-self: right;
+}
