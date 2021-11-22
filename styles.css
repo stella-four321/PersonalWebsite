@@ -236,8 +236,7 @@ p.date {
   transform: scale(1.1);
   opacity: 0.8;
 }
-.imgBox {
-  width: 200px;
-  height: 260px;
-  align-self: right;
+.pad {
+  padding-bottom: 100px;
+  padding-top: 30px;
 }
